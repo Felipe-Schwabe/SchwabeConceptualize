@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#0B0C0C"/>
+  <circle cx="970" cy="92" r="245" fill="#D6FF5F" fill-opacity="0.12"/>
+  <circle cx="1030" cy="530" r="320" fill="#D6FF5F" fill-opacity="0.06"/>
+  <path d="M805 115C997 31 1141 170 1044 332C953 483 722 477 697 319C682 222 734 146 805 115Z" stroke="#D6FF5F" stroke-opacity="0.52"/>
+  <path d="M756 281C876 176 1068 230 1113 362C1148 466 1036 566 884 533C746 503 686 342 756 281Z" stroke="#F0EEE8" stroke-opacity="0.24"/>
+  <rect x="794" y="142" width="184" height="342" rx="86" transform="rotate(18 794 142)" fill="#F0EEE8" fill-opacity="0.07" stroke="#F0EEE8" stroke-opacity="0.44"/>
+  <path d="M850 224H950M850 245H924M859 404H911" stroke="#D6FF5F" stroke-width="2" stroke-linecap="round"/>
+  <text x="64" y="96" fill="#D6FF5F" font-family="Arial, Helvetica, sans-serif" font-size="18" letter-spacing="6">FELIPE SCHWABE / 2026</text>
+  <text x="60" y="322" fill="#F0EEE8" font-family="Arial, Helvetica, sans-serif" font-size="88" letter-spacing="-6">IDEAS THAT</text>
+  <text x="60" y="420" fill="#F0EEE8" font-family="Georgia, serif" font-size="94" font-style="italic" letter-spacing="-6">deserve to be seen.</text>
+  <text x="64" y="552" fill="#B6B6AE" font-family="Arial, Helvetica, sans-serif" font-size="16" letter-spacing="3">CREATIVE DEVELOPER / AI CREATIVE DESIGNER</text>
+</svg>

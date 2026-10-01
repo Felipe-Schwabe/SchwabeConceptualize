@@ -1,0 +1,27 @@
+{
+  "name": "schwabe-conceptualize",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "generate:og": "node scripts/generate-og-image.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.17.30",
+    "@types/react": "19.2.0",
+    "@types/react-dom": "19.2.2",
+    "eslint": "9.39.1",
+    "eslint-config-next": "16.3.8",
+    "sharp": "0.35.5",
+    "typescript": "5.8.3"
+  }
+}
