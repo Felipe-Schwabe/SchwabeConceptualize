@@ -152,16 +152,18 @@ export const projects = [
     video: "/videos/projects/skin-ritual.mp4",
     poster: "/images/projects/skin-ritual-poster.jpg",
     images: [
-      "/images/projects/skin-ritual-still-01.jpg",
-      "/images/projects/skin-ritual-still-02.jpg",
-      "/images/projects/skin-ritual-still-03.jpg"
+      "/images/projects/skin-ritual-still-01.png",
+      "/images/projects/skin-ritual-still-02.png",
+      "/images/projects/skin-ritual-still-03.png"
     ],
     year: "2026",
     tags: ["Pele", "Retrato", "Beleza limpa", "Detalhe"],
     featured: true,
     conceptual: true,
     accent: "#d6ff5f",
-    aspect: "portrait"
+    aspect: "portrait",
+    videoAspect: "vertical",
+    videoControls: true
   },
   {
     id: 7,

@@ -258,8 +258,18 @@ export default function HomePage() {
             </a>
             <a className="contact__email" href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a>
             <div className="contact__socials">
-              {siteConfig.instagramUrl ? <a href={siteConfig.instagramUrl}>Instagram</a> : null}
-              {siteConfig.linkedinUrl ? <a href={siteConfig.linkedinUrl}>LinkedIn</a> : null}
+              {siteConfig.instagramUrl ? (
+                <a className="contact__social-link" href={siteConfig.instagramUrl} target="_blank" rel="noreferrer" aria-label="Abrir Instagram de Felipe Schwabe">
+                  <span>Instagram</span>
+                  <ArrowIcon />
+                </a>
+              ) : null}
+              {siteConfig.linkedinUrl ? (
+                <a className="contact__social-link" href={siteConfig.linkedinUrl} target="_blank" rel="noreferrer" aria-label="Abrir LinkedIn de Felipe Schwabe">
+                  <span>LinkedIn</span>
+                  <ArrowIcon />
+                </a>
+              ) : null}
               {!siteConfig.instagramUrl && !siteConfig.linkedinUrl ? <span>Instagram / LinkedIn em breve</span> : null}
             </div>
           </div>

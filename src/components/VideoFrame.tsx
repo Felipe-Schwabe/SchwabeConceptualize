@@ -12,8 +12,12 @@ type VideoFrameProps = {
   accent?: string;
   artwork?: string;
   className?: string;
-  aspect?: "hero" | "wide" | "portrait" | "standard";
+  aspect?: "hero" | "wide" | "portrait" | "standard" | "vertical";
   showStatus?: boolean;
+  controls?: boolean;
+  muted?: boolean;
+  loop?: boolean;
+  preload?: "none" | "metadata" | "auto";
 };
 
 export function VideoFrame({
@@ -25,7 +29,11 @@ export function VideoFrame({
   artwork,
   className,
   aspect = "standard",
-  showStatus = true
+  showStatus = true,
+  controls = false,
+  muted = true,
+  loop = true,
+  preload = "none"
 }: VideoFrameProps) {
   const frameRef = useRef<HTMLDivElement>(null);
   const [shouldLoad, setShouldLoad] = useState(false);
@@ -65,10 +73,11 @@ export function VideoFrame({
         <video
           className={cx("video-frame__video", isPlaying && "is-playing")}
           autoPlay
-          muted
-          loop
+          controls={controls}
+          muted={muted}
+          loop={loop}
           playsInline
-          preload="none"
+          preload={preload}
           poster={poster}
           onCanPlay={() => setIsPlaying(true)}
           onError={() => setHasFailed(true)}

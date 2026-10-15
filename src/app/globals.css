@@ -160,7 +160,7 @@ a {
 .contact__socials a,
 .site-footer a,
 .back-link {
-  transition: color 180ms ease;
+  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
 }
 
 .site-nav a:hover,
@@ -328,6 +328,11 @@ h3 {
 
 .video-frame--portrait {
   aspect-ratio: 0.82 / 1;
+}
+
+.video-frame--vertical {
+  aspect-ratio: 9 / 16;
+  min-height: 0;
 }
 
 .video-frame--standard {
@@ -1227,9 +1232,39 @@ h3 {
 
 .contact__socials {
   display: flex;
-  gap: 18px;
+  flex-wrap: wrap;
+  gap: 10px;
   color: var(--paper-muted);
-  font-size: 9px;
+  font-size: var(--text-label);
+}
+
+.contact__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 40px;
+  padding: 10px 12px 10px 13px;
+  border: 1px solid rgba(240, 238, 232, 0.26);
+  background: rgba(240, 238, 232, 0.025);
+  color: var(--paper);
+}
+
+.contact__social-link .arrow-icon {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  transition: transform 180ms ease;
+}
+
+.contact__social-link:hover {
+  border-color: var(--accent);
+  background: rgba(214, 255, 95, 0.06);
+  color: var(--paper);
+  transform: translateY(-2px);
+}
+
+.contact__social-link:hover .arrow-icon {
+  transform: translate(2px, -2px);
 }
 
 .contact__socials span {
@@ -1286,6 +1321,11 @@ h3 {
   font-size: clamp(62px, 11vw, 178px);
   line-height: 0.83;
   letter-spacing: -0.09em;
+}
+
+.project-hero .video-frame--vertical {
+  width: min(100%, 480px);
+  margin-inline: auto;
 }
 
 .project-hero__skill {

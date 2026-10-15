@@ -1,4 +1,4 @@
-export type ProjectAspect = "wide" | "portrait" | "standard";
+export type ProjectAspect = "wide" | "portrait" | "standard" | "vertical";
 
 export type Project = {
   id: number;
@@ -19,4 +19,6 @@ export type Project = {
   conceptual: boolean;
   accent: string;
   aspect: ProjectAspect;
+  videoAspect?: "wide" | "vertical";
+  videoControls?: boolean;
 };

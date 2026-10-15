@@ -30,7 +30,12 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
       title: `${project.title} — ${project.creativeSkill}`,
       description: project.description,
       url: `${siteConfig.domain}/projetos/${project.slug}`,
-      images: [{ url: project.poster, width: 1200, height: 800, alt: project.title }]
+      images: [{
+        url: project.poster,
+        width: project.videoAspect === "vertical" ? 1080 : 1200,
+        height: project.videoAspect === "vertical" ? 1920 : 800,
+        alt: project.title
+      }]
     }
   };
 }
@@ -73,7 +78,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           eyebrow={project.industry}
           accent={project.accent}
           artwork={project.slug}
-          aspect="wide"
+          aspect={project.videoAspect ?? "wide"}
+          controls={project.videoControls}
+          preload={project.videoControls ? "metadata" : "none"}
         />
       </section>
 
